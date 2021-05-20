@@ -10,8 +10,8 @@ services:
       args:
         - MOSQUITTO_VERSION=${MOSQUITTO_VERSION:-latest}
     environment:
-      - MOSQUITTO_USERNAME=${MOSQUITTO_USERNAME}
-      - MOSQUITTO_PASSWORD=${MOSQUITTO_PASSWORD}
+      - MOSQUITTO_USERNAME=${_MOSQUITTO_USERNAME}
+      - MOSQUITTO_PASSWORD=${_MOSQUITTO_PASSWORD}
     image: eclipse-mosquitto:${MOSQUITTO_VERSION:-latest}
     container_name: eclipse-mosquitto
     restart: always
