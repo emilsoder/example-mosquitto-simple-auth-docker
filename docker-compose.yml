@@ -12,7 +12,7 @@ services:
     environment:
       - MOSQUITTO_USERNAME=${MOSQUITTO_USERNAME}
       - MOSQUITTO_PASSWORD=${MOSQUITTO_PASSWORD}
-    image: eclipse-mosquitto:${MOSQUITTO_VERSION:-latest}
+    image: eclipse-mosquitto
     container_name: eclipse-mosquitto
     restart: always
     volumes:
